@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+div#contiudo{
+    background-color: rgb(177, 175, 175);
+    border-radius: 12px;
+    width:35%;
+}
+div#tudo{
+    display: flex;
+    justify-content: center;
+
+}
+div#valor{
+    padding-top: 8px;
+    text-align: center;
+    width:35%;
+    border-radius: 12px;
+    border:1px solid black;
+
+}
+div#cont{
+    display: flex;
+    justify-content: center;
+    text-decoration: dashed;
+}
+tr#espaco{
+ display: block;
+    justify-content:space-between;
+  
+    
+}
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Aumentado para separar os itens */
+    
+    padding-bottom: 10px; /* Espaçamento inferior */
+justify-content: space-evenly; 
+}
+img{
+    border-radius: 6px;
+}
