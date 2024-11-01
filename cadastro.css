@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body{
+    background-color: rgb(255, 246, 235);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
 div#contiudo{
     background-color:white;
     border-radius: 12px;
@@ -40,12 +45,16 @@ tr#espaco{
 }
 
 #im{
+    display: flex;
     border-radius: 50px; 
     height: 80px;
     width:80px;
-    border: 2px solid grey;
+    border: 2px solid orange;
     overflow: hidden;
+    justify-content:center;
+    background-size: cover;
 }
+
 .nom{
     margin-top:32px;
     margin-left:-12%;
@@ -53,17 +62,15 @@ tr#espaco{
 }
 #add{
     margin-left:60%;
-    background-color: rgb(55, 255, 55);
+    background-color:orange;
     font-size: 15px;
     padding:10px;
     font-family: arial;
     border-radius: 5px;
+    border: none;
+    color: white;
 }
 
-#im img{
-    text-align: center;
-    
-}
 #itemlado{
 display: flex;   
 float:right;
@@ -78,8 +85,13 @@ margin-top: -62px;
     text-align: center;
     line-height: 50px;
     border-radius: 35px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.itemlado:hover{
+    background-color: orange;
 }
 
 .modal{
@@ -100,7 +112,16 @@ margin-top: -62px;
     padding: 20px;
     border: 1px solid #888;
     width:40%;
+    color:orange;
     border-radius: 7px;
+}
+#ac{
+    padding:10px;
+    font-family: arial;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    color:white;
 }
 .closeBtn{
     color:#aaa;
@@ -114,4 +135,22 @@ margin-top: -62px;
     text-decoration: none;
     cursor: pointer;
 }
+
+#Modalnome{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+#Modaldata{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
 

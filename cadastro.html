@@ -5,55 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar</title>
     <link rel="stylesheet" href="cadastro.css">
-    <style>
-        /* Estilos para o modal */
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; 
-            padding: 20px;
-            border: 1px solid #888;
-            width: 40%; 
-            text-align: center;
-        }
-        .closeBtn {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .closeBtn:hover,
-        .closeBtn:focus {
-            color: black;
-            cursor: pointer;
-        }
-    </style>
+    
 </head>
 <body>
    
-    <div ><button id="add">Adicionar</button></div>
+    <div ><button id="add" onclick="pagina()">Adicionar</button></div>
     
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="closeBtn" onclick="fecharModal()">&times;</span>
-            <label for="Modalnome">Nome:</label><br>
+            <label for="Modalnome" style="font-weight: bold;">NOME</label><br>
             <input type="text" id="Modalnome" required><br><p></p>
-            <label for="Modaldata">Data:</label><br>
+            <label for="Modaldata" style="font-weight: bold;">DATA</label><br>
             <input type="date" id="Modaldata" required><p></p>
             <input type="hidden" id="Modalid_usu">
-            <label for="Modalficheiro">Imagem:</label><br>
+            <label for="Modalficheiro" style="font-weight: bold;">IMAGEM</label><br>
             <input type="file" id="Modalficheiro" accept="image/*"><p></p>
-           <button onclick="troca()">Atualizar</button>
+           <button onclick="troca()" id="ac">Atualizar</button>
         </div>
     </div>
 
@@ -63,6 +31,9 @@
 
     <script>
         
+        function pagina(){
+            window.location.href="index.html";
+        }
 
         function limpar() {
             document.getElementById("nome").value = "";
@@ -104,7 +75,7 @@
                 contiudo.insertAdjacentHTML('beforeend', `
                     <div class='item'>
                        <div id='im'> ${item.imagem ? `<img src='${item.imagem}' style='width: 100px;'>` : ""}</div>
-                        <div class='item'>${item.nome}</div>
+                        <div class='item' style='font-weight:bold'>${item.nome}</div>
                         <div class='nom'>${idade}</div></div>
                         <div id='itemlado'>
                         <div class='itemlado' onclick='mudar(${JSON.stringify(item)})'>
