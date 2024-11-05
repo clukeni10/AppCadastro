@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>App #2</title>
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <div class="container">
+            <!-- Ícone ou imagem selecionada -->
+  <div class="icon-container" onclick="document.getElementById('imageInput').click();" id="imageIcon">
+      📷
+    </div>
+  
+    <!-- Input de imagem oculto -->
+    <input type="file" id="imageInput" accept="image/*" onchange="replaceIconWithImage(event)">
+  
+            
+      <div class="inputs">
+            <label for="nome" class="label">NOME</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="data" class="label">DATA</label>
+            <input type="date" name="data" id="data">
+
+            <button id="botao">ADICIONAR</button>
+      </div>
+            
+      </div>
+
+      <script src="enviar_valores.js"></script>
+</body>
+</html>
