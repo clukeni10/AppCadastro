@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="visualiza.js"></script>
+    
+</head>
+<body>
+   
+    <div ><button id="add" onclick="pagina()">Adicionar</button></div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn" onclick="fecharModal()">&times;</span>
+            <label for="Modalnome" style="font-weight: bold;">NOME</label><br>
+            <input type="text" id="Modalnome" required><br><p></p>
+            <label for="Modaldata" style="font-weight: bold;">DATA</label><br>
+            <input type="date" id="Modaldata" required><p></p>
+            <input type="hidden" id="Modalid_usu">
+            <label for="Modalficheiro" style="font-weight: bold;">IMAGEM</label><br>
+            <input type="file" id="Modalficheiro" accept="image/*"><p></p>
+           <button onclick="troca()" id="ac">Atualizar</button>
+        </div>
+    </div>
+
+    <div id="cont">
+        <div id="contiudo" style="margin-top: 10px;"></div>
+    </div>
+
+</body>
+</html>
