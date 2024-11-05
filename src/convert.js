@@ -45,6 +45,7 @@ function saveButton() {
     };
     reader.readAsDataURL(file);
     console.log('Dados salvos com successo');
+    window.location.href = '../cadastro.html';
 }
 ;
 var imageInputElement = document.getElementById('imageInput');
