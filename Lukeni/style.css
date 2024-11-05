@@ -124,7 +124,7 @@ body{
       border-radius: 3px;
     }
 
-#botao{
+button{
       width: 210px;
       height: 40px;
       margin-top: 15px;
@@ -136,7 +136,7 @@ body{
       color: white;
 }
 
-#botao:hover{
+button:hover{
       background-color: rgb(206, 142, 24);
       cursor: pointer;
 }
