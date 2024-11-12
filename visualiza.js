@@ -31,10 +31,10 @@ function exibirDados(valor1) {
                 </div>
                 <div id='itemlado'>
                     <div class='itemlado' onclick='mudar(${JSON.stringify(item)})'>
-                        <section><img src='lapis.png' width='25'></section>
+                        <section><img src='/img/lapis.png' width='25'></section>
                     </div>
                     <div class='itemlado' onclick='deletar(${item.id})'>
-                        <img src='marca-x.png' width='25'>
+                        <img src='/img/marca-x.png' width='25'>
                     </div>
                 </div>
                 <hr>
